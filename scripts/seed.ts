@@ -377,7 +377,8 @@ async function seedHana(data: Dataset) {
          FROM M_TABLES
          WHERE SCHEMA_NAME = CURRENT_SCHEMA AND TABLE_NAME = UPPER('${t.name}')`
       );
-      if (sizeRows.length > 0) sizeInfo = `  ~${sizeRows[0].SIZE_MB} MB`;
+      if (sizeRows.length > 0)
+        sizeInfo = `  ~${Number(sizeRows[0].SIZE_MB).toFixed(1)} MB`;
     } catch {
       sizeInfo = "  (size unavailable — no M_TABLES privilege)";
     }
