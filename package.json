@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start -p 3010",
     "lint": "next lint",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "tsx scripts/seed.ts",
+    "verify": "tsx scripts/verify.ts"
   },
   "dependencies": {
     "@faker-js/faker": "^10.4.0",
