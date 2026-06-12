@@ -18,8 +18,15 @@ export interface HanaConnection {
 type RawConnection = ReturnType<typeof hanaClient.createConnection>;
 
 function connParams() {
-  const host = process.env.HANA_HOST;
-  const port = process.env.HANA_PORT ?? "443";
+  let host = process.env.HANA_HOST ?? "";
+  let port = process.env.HANA_PORT ?? "443";
+  // Tolerate a pasted SQL endpoint that already includes the port
+  // ("…hanacloud.ondemand.com:443") — otherwise the port would be doubled.
+  const hostWithPort = host.match(/^(.+):(\d+)$/);
+  if (hostWithPort) {
+    host = hostWithPort[1];
+    port = hostWithPort[2];
+  }
   const user = process.env.HANA_USER;
   const password = process.env.HANA_PASSWORD;
   if (!host || !user || !password) {
