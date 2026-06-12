@@ -4,9 +4,9 @@
   "private": true,
   "description": "SAP HANA vs PostgreSQL analytical benchmark demo - online bookstore (Bachelor thesis)",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3010",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3010",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts"
   },
