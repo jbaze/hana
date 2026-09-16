@@ -14,3 +14,5 @@
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+/data/*.db-shm
+/data/*.db-wal
