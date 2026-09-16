@@ -1,6 +1,37 @@
-# Книжарница HANA — SAP HANA vs PostgreSQL Benchmark Demo
+# Thesis repository — two applications
 
-Full-stack web application for a Bachelor thesis that demonstrates the
+This repository contains the software developed for the Bachelor thesis
+**„Примена на информациски системи во производните претпријатија"** (mentor:
+ред. проф. д-р Благој Ристевски). It holds two separate applications:
+
+| App | Location | Status | What it is |
+| --- | --- | --- | --- |
+| **МебелИС** | [`fabrika/`](fabrika/) | **Current — the thesis practical part** | Integrated information system prototype for a furniture manufacturing company: orders, bill of materials, production, quality control, warehouse, delivery, reports. Next.js + SQLite, zero external services. See [`fabrika/README.md`](fabrika/README.md). |
+| Книжарница HANA | repo root | Archived — earlier thesis direction | SAP HANA vs PostgreSQL analytical benchmark on an online bookstore dataset. Kept as working material and for reference. |
+
+Both UIs are entirely in Macedonian (Cyrillic); code, schemas, SQL and
+comments are in English.
+
+**Quick start for the current app (МебелИС):**
+
+```bash
+cd fabrika
+npm ci
+npm run dev        # http://localhost:3020 — no configuration needed
+```
+
+The database self-initializes from a committed seed file — no scripts, no
+accounts, no environment variables. Deployment: a Vercel project with
+**Root Directory = `fabrika`** deploys it as-is (details in `fabrika/README.md`).
+
+The thesis diagrams (ER model, use-case, architecture, process flow) are in
+[`fabrika/docs/diagrams/`](fabrika/docs/diagrams/) as SVG and print-ready PNG.
+
+---
+
+# Книжарница HANA — SAP HANA vs PostgreSQL Benchmark Demo (archived direction)
+
+Full-stack web application that demonstrates the
 performance characteristics of **SAP HANA** (in-memory, column-store) versus
 **PostgreSQL** (disk-based row-store) on analytical workloads, using an online
 bookstore as the case study.
