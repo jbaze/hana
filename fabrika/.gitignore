@@ -5,8 +5,8 @@
 /.next/
 /out/
 
-# local database (regenerate with: npm run seed)
-/data/*.db
+# local runtime database (the committed seed copy is data/mebelis.seed.db)
+/data/mebelis.db
 /data/*.db-journal
 
 # misc

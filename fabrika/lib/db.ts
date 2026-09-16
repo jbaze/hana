@@ -1,14 +1,22 @@
 import Database from "better-sqlite3";
-import { existsSync, mkdirSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 /**
- * SQLite database access. The whole database is a single local file
- * (data/mebelis.db) - no server, no configuration, ideal for a defensible
- * prototype. The schema is created automatically on first access.
+ * SQLite database access. The whole database is a single local file - no
+ * server, no configuration. The schema is created automatically on first
+ * access, and a pre-seeded copy (data/mebelis.seed.db, committed to the
+ * repository) is used to self-initialize, so the app works immediately after
+ * cloning without running any script.
+ *
+ * On Vercel the deployment filesystem is read-only, so the seed database is
+ * copied to /tmp and used from there. Writes work, but /tmp is ephemeral per
+ * serverless instance - fine for a demo deployment, documented in the README.
  */
 
-const DB_PATH = join(process.cwd(), "data", "mebelis.db");
+const SEED_PATH = join(process.cwd(), "data", "mebelis.seed.db");
+const LOCAL_PATH = join(process.cwd(), "data", "mebelis.db");
+const DB_PATH = process.env.VERCEL ? "/tmp/mebelis.db" : LOCAL_PATH;
 
 let db: Database.Database | null = null;
 
@@ -103,6 +111,10 @@ export function getDb(): Database.Database {
   if (db) return db;
   const dir = dirname(DB_PATH);
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  // Self-initialize from the committed seed copy when no database exists yet.
+  if (!existsSync(DB_PATH) && existsSync(SEED_PATH)) {
+    copyFileSync(SEED_PATH, DB_PATH);
+  }
   db = new Database(DB_PATH);
   db.pragma("journal_mode = WAL");
   db.pragma("foreign_keys = ON");

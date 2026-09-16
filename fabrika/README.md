@@ -13,15 +13,38 @@ The entire UI is in Macedonian; code, schema and comments are in English.
 ## Брзо стартување (quick start)
 
 ```bash
-npm install        # инсталација на зависностите
-npm run seed       # креира data/mebelis.db со демо податоци (~14 месеци историја)
+npm ci             # инсталација точно според package-lock.json
 npm run dev        # стартување: http://localhost:3020
 ```
 
 Production build: `npm run build && npm start` (also port 3020).
 
-The database is a **single local SQLite file** (`data/mebelis.db`) — no server,
-no accounts, no network. `npm run seed` recreates it from scratch at any time.
+The database is a **single local SQLite file**. A pre-seeded copy
+(`data/mebelis.seed.db`, ~190 KB, committed to the repository) is used to
+self-initialize on first start — **no seed script needs to be run**. To reset
+to the clean demo state, delete `data/mebelis.db` and restart, or run
+`npm run seed` to regenerate everything from scratch (deterministic, same
+dataset every time).
+
+> Security note: `npm ci` installs the exact dependency versions pinned in
+> the committed `package-lock.json` (6 runtime dependencies). Nothing else is
+> downloaded or executed.
+
+## Deployment (Vercel)
+
+The app deploys to Vercel as-is:
+
+1. In Vercel: **Add New → Project** → import this repository.
+2. Set **Root Directory** to `fabrika` (Framework: Next.js is auto-detected).
+3. Deploy — no environment variables are needed.
+
+On Vercel the deployment filesystem is read-only, so at runtime the bundled
+seed database is copied to `/tmp` (see `lib/db.ts`). Reading works exactly
+like locally; **writes work but are ephemeral** — they survive within a warm
+serverless instance and reset when it recycles. That makes the Vercel
+deployment ideal for showing the system and even walking an order through the
+flow, while the authoritative demo for the defense is the local run, where
+the database is a real persistent file.
 
 ## Screens (сите на македонски)
 
@@ -78,5 +101,5 @@ Regenerate after any schema/flow change with `node scripts/diagrams.mjs`
 9. **Магацин** → покажи ги движењата на залихата (секој чекор е евидентиран).
 10. **Извештаи** → месечно производство, вредност на испораки, шкарт стапка.
 
-If anything goes wrong during a live demo, `npm run seed` restores a clean,
-fully populated database in a few seconds.
+If anything goes wrong during a live demo, delete `data/mebelis.db` and
+restart the app — it re-initializes from the committed seed copy in seconds.

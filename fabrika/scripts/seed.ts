@@ -10,6 +10,8 @@
  * internally consistent - exactly as if the company had used the system.
  */
 
+import { copyFileSync } from "node:fs";
+import { join } from "node:path";
 import { resetDb } from "../lib/db";
 import {
   createOrder,
@@ -276,4 +278,11 @@ console.log(
   `  produced units: ${qc.g + qc.d} (good ${qc.g}, defect ${qc.d}, ` +
     `${((qc.d / (qc.g + qc.d)) * 100).toFixed(1)}% defect rate)`
 );
-console.log("\nDone. Database: data/mebelis.db");
+// Refresh the committed seed artifact so deployments and fresh clones
+// self-initialize with this exact dataset (see lib/db.ts).
+db.pragma("wal_checkpoint(TRUNCATE)");
+copyFileSync(
+  join(process.cwd(), "data", "mebelis.db"),
+  join(process.cwd(), "data", "mebelis.seed.db")
+);
+console.log("\nDone. Database: data/mebelis.db (+ seed artifact data/mebelis.seed.db)");
