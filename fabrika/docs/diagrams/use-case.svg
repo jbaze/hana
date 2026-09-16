@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="640" viewBox="0 0 880 640">
+<rect width="880" height="640" fill="white"/>
+<text x="40" y="40" font-family="Arial, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#0f172a">Дијаграм на случаи на употреба — МебелИС</text>
+<rect x="225" y="55" width="610" height="530" rx="14" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="530" y="78" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">МебелИС</text>
+<g stroke="#0f172a" stroke-width="1.6" fill="none">
+<circle cx="110" cy="240" r="13"/>
+<path d="M 110 253 V 290 M 90 267 H 130 M 110 290 L 94 315 M 110 290 L 126 315"/>
+</g>
+<text x="110" y="335" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Оператор</text>
+<g stroke="#0f172a" stroke-width="1.6" fill="none">
+<circle cx="110" cy="500" r="13"/>
+<path d="M 110 513 V 550 M 90 527 H 130 M 110 550 L 94 575 M 110 550 L 126 575"/>
+</g>
+<text x="110" y="595" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Раководител</text>
+<ellipse cx="385" cy="90" rx="105" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="94" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Евиденција на клиенти</text>
+<ellipse cx="385" cy="155" rx="140" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="159" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Дефинирање производи и норматив</text>
+<ellipse cx="385" cy="220" rx="95" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="224" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Креирање нарачка</text>
+<ellipse cx="385" cy="285" rx="150" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="289" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Проверка на расположливи материјали</text>
+<ellipse cx="385" cy="350" rx="105" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="354" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Набавка на материјали</text>
+<ellipse cx="385" cy="415" rx="145" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="419" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Управување со производствен налог</text>
+<ellipse cx="385" cy="480" rx="105" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="484" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Контрола на квалитет</text>
+<ellipse cx="385" cy="545" rx="100" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="385" y="549" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Испорака на нарачка</text>
+<ellipse cx="660" cy="300" rx="120" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="660" y="304" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Преглед на контролна табла</text>
+<ellipse cx="660" cy="380" rx="105" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+<text x="660" y="384" font-family="Arial, 'Segoe UI', sans-serif" font-size="12.5" fill="#065f46" text-anchor="middle">Аналитички извештаи</text><path d="M 130 290 L 280 90" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 245 155" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 290 220" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 235 285" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 280 350" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 240 415" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 280 480" stroke="#475569" stroke-width="1.2"/><path d="M 130 290 L 285 545" stroke="#475569" stroke-width="1.2"/><path d="M 130 550 L 540 300" stroke="#475569" stroke-width="1.2"/><path d="M 130 550 L 555 380" stroke="#475569" stroke-width="1.2"/>
+</svg>

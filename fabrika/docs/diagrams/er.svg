@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="800" viewBox="0 0 1180 800">
+<rect width="1180" height="800" fill="white"/>
+<text x="40" y="40" font-family="Arial, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#0f172a">ЕР модел на базата на податоци — МебелИС</text>
+<text x="40" y="60" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#64748b">PK — примарен клуч · FK — надворешен клуч · испрекината линија — евиденција на движења на залихата</text><g>
+<rect x="40" y="90" width="230" height="169" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 40 118 H 270" stroke="#334155" stroke-width="1.2"/>
+<rect x="40" y="90" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="155" y="109" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">customers (клиенти)</text>
+<text x="52" y="133" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">customer_id</tspan></text>
+<text x="258" y="133" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="52" y="152" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">name</text>
+<text x="52" y="171" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">contact_person</text>
+<text x="52" y="190" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">phone</text>
+<text x="52" y="209" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">email</text>
+<text x="52" y="228" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">city</text>
+<text x="52" y="247" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">created_at</text>
+</g>
+<g>
+<rect x="440" y="70" width="230" height="169" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 440 98 H 670" stroke="#334155" stroke-width="1.2"/>
+<rect x="440" y="70" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="555" y="89" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">orders (нарачки)</text>
+<text x="452" y="113" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">order_id</tspan></text>
+<text x="658" y="113" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="452" y="132" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">customer_id</tspan></text>
+<text x="658" y="132" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="452" y="151" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">product_id</tspan></text>
+<text x="658" y="151" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="452" y="170" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">quantity</text>
+<text x="452" y="189" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">status</text>
+<text x="452" y="208" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">created_at</text>
+<text x="452" y="227" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">updated_at</text>
+</g>
+<g>
+<rect x="860" y="70" width="230" height="150" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 860 98 H 1090" stroke="#334155" stroke-width="1.2"/>
+<rect x="860" y="70" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="975" y="89" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">products (производи)</text>
+<text x="872" y="113" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">product_id</tspan></text>
+<text x="1078" y="113" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="872" y="132" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">code</text>
+<text x="872" y="151" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">name</text>
+<text x="872" y="170" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">category</text>
+<text x="872" y="189" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">price</text>
+<text x="872" y="208" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">stock</text>
+</g>
+<g>
+<rect x="860" y="330" width="250" height="93" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 860 358 H 1110" stroke="#334155" stroke-width="1.2"/>
+<rect x="860" y="330" width="250" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="985" y="349" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">product_materials (норматив)</text>
+<text x="872" y="373" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">product_id</tspan></text>
+<text x="1098" y="373" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="872" y="392" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">material_id</tspan></text>
+<text x="1098" y="392" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="872" y="411" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">quantity</text>
+</g>
+<g>
+<rect x="860" y="490" width="230" height="150" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 860 518 H 1090" stroke="#334155" stroke-width="1.2"/>
+<rect x="860" y="490" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="975" y="509" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">materials (материјали)</text>
+<text x="872" y="533" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">material_id</tspan></text>
+<text x="1078" y="533" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="872" y="552" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">name</text>
+<text x="872" y="571" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">unit</text>
+<text x="872" y="590" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">unit_price</text>
+<text x="872" y="609" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">stock</text>
+<text x="872" y="628" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">min_stock</text>
+</g>
+<g>
+<rect x="440" y="330" width="230" height="169" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 440 358 H 670" stroke="#334155" stroke-width="1.2"/>
+<rect x="440" y="330" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="555" y="349" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">production_orders (налози)</text>
+<text x="452" y="373" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">po_id</tspan></text>
+<text x="658" y="373" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="452" y="392" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">order_id</tspan></text>
+<text x="658" y="392" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="452" y="411" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">product_id</tspan></text>
+<text x="658" y="411" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="452" y="430" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">quantity</text>
+<text x="452" y="449" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">status</text>
+<text x="452" y="468" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">started_at</text>
+<text x="452" y="487" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">completed_at</text>
+</g>
+<g>
+<rect x="440" y="600" width="230" height="169" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 440 628 H 670" stroke="#334155" stroke-width="1.2"/>
+<rect x="440" y="600" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="555" y="619" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">quality_checks (контроли)</text>
+<text x="452" y="643" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">qc_id</tspan></text>
+<text x="658" y="643" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="452" y="662" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">po_id</tspan></text>
+<text x="658" y="662" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">FK</text>
+<text x="452" y="681" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">checked_qty</text>
+<text x="452" y="700" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">good_qty</text>
+<text x="452" y="719" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">defect_qty</text>
+<text x="452" y="738" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">note</text>
+<text x="452" y="757" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">checked_at</text>
+</g>
+<g>
+<rect x="40" y="490" width="230" height="169" rx="8" fill="white" stroke="#334155" stroke-width="1.5"/>
+<path d="M 40 518 H 270" stroke="#334155" stroke-width="1.2"/>
+<rect x="40" y="490" width="230" height="28" rx="8" fill="#047857" opacity="0.12"/>
+<text x="155" y="509" font-family="Arial, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">stock_movements (движења)</text>
+<text x="52" y="533" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a"><tspan font-weight="bold">movement_id</tspan></text>
+<text x="258" y="533" font-family="Arial, 'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">PK</text>
+<text x="52" y="552" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">item_type</text>
+<text x="52" y="571" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">item_id</text>
+<text x="52" y="590" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">change</text>
+<text x="52" y="609" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">reason</text>
+<text x="52" y="628" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">ref</text>
+<text x="52" y="647" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" fill="#0f172a">created_at</text>
+</g><path d="M 270 160 L 440 160" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="276" y="155" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text><text x="426" y="155" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+<path d="M 860 150 L 670 150" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="866" y="145" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text><text x="656" y="145" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+<path d="M 975 232 L 975 330" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="981" y="227" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text><text x="961" y="325" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+<path d="M 975 490 L 975 420" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="981" y="485" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text><text x="961" y="415" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+<path d="M 555 220 L 555 330" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="561" y="215" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text><text x="541" y="325" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+<path d="M 555 500 L 555 600" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="561" y="495" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text><text x="541" y="595" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">1</text>
+<path d="M 860 560 L 270 560" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="256" y="555" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+<path d="M 440 700 L 155 700 L 155 660" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="141" y="655" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857">N</text>
+</svg>

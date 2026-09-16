@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560">
+<rect width="1180" height="560" fill="white"/>
+<text x="40" y="40" font-family="Arial, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#0f172a">Тек на производствениот процес низ системот МебелИС</text>
+<rect x="40" y="90" width="130" height="50" rx="24" fill="white" stroke="#334155" stroke-width="1.6"/>
+<text x="105" y="120" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Клиент</text>
+<defs><marker id="pa170115" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 170 115 H 203" stroke="#475569" stroke-width="1.6" marker-end="url(#pa170115)"/>
+<text x="190" y="107" font-family="Arial, 'Segoe UI', sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">барање</text>
+<rect x="210" y="82" width="190" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="305" y="109" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Нарачка</text>
+<text x="305" y="128" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">статус: Нова</text>
+<defs><marker id="pa400115" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 400 115 H 433" stroke="#475569" stroke-width="1.6" marker-end="url(#pa400115)"/>
+<path d="M 520 82 L 600 115 L 520 148 L 440 115 Z" fill="#fefce8" stroke="#b45309" stroke-width="1.6"/>
+<text x="520" y="110" font-family="Arial, 'Segoe UI', sans-serif" font-size="11.5" font-weight="bold" fill="#92400e" text-anchor="middle">Има доволно</text>
+<text x="520" y="124" font-family="Arial, 'Segoe UI', sans-serif" font-size="11.5" font-weight="bold" fill="#92400e" text-anchor="middle">материјали?</text>
+<defs><marker id="pa600115" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 600 115 H 653" stroke="#475569" stroke-width="1.6" marker-end="url(#pa600115)"/>
+<text x="630" y="107" font-family="Arial, 'Segoe UI', sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">да</text>
+<rect x="660" y="82" width="210" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="765" y="109" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Производствен налог</text>
+<text x="765" y="128" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">статус: Во производство</text>
+<defs><marker id="pv520148" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 520 148 V 203" stroke="#475569" stroke-width="1.6" marker-end="url(#pv520148)"/>
+<text x="530" y="183" font-family="Arial, 'Segoe UI', sans-serif" font-size="10.5" fill="#64748b">не</text>
+<rect x="430" y="210" width="180" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="520" y="237" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Набавка</text>
+<text x="520" y="256" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">влез на материјали</text><path d="M 430 243 H 395 V 130 H 434" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="5 4"/>
+<defs><marker id="pv765148" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 765 148 V 203" stroke="#475569" stroke-width="1.6" marker-end="url(#pv765148)"/>
+
+<rect x="660" y="210" width="210" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="765" y="237" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Производство</text>
+<text x="765" y="256" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">изработка на единиците</text>
+<defs><marker id="pv765276" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 765 276 V 323" stroke="#475569" stroke-width="1.6" marker-end="url(#pv765276)"/>
+
+<rect x="660" y="330" width="210" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="765" y="357" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Контрола на квалитет</text>
+<text x="765" y="376" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">исправни / неисправни</text><defs><marker id="wh" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 660 363 H 407" stroke="#475569" stroke-width="1.6" marker-end="url(#wh)"/>
+<text x="533" y="355" font-family="Arial, 'Segoe UI', sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">исправни единици</text>
+<rect x="210" y="330" width="190" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="305" y="357" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Магацин</text>
+<text x="305" y="376" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">статус: Во магацин</text>
+<defs><marker id="pv305396" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 305 396 V 443" stroke="#475569" stroke-width="1.6" marker-end="url(#pv305396)"/>
+<text x="317" y="427" font-family="Arial, 'Segoe UI', sans-serif" font-size="10.5" fill="#64748b">испорака и раздолжување на залихата</text>
+<rect x="210" y="450" width="190" height="66" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.6"/>
+<text x="305" y="477" font-family="Arial, 'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">Испорака</text>
+<text x="305" y="496" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#334155" text-anchor="middle">статус: Испорачана</text><defs><marker id="cl2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+<path d="M 210 483 H 105 V 147" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#cl2)"/>
+<text x="118" y="300" font-family="Arial, 'Segoe UI', sans-serif" font-size="10.5" fill="#64748b">до клиентот</text><rect x="900" y="82" width="240" height="180" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="1020" y="106" font-family="Arial, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#334155" text-anchor="middle">Евиденција во системот</text><text x="915" y="128" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#475569">Секоја промена на залихата се</text><text x="915" y="145" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#475569">запишува во stock_movements.</text><text x="915" y="162" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#475569"></text><text x="915" y="179" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#475569">Статусите на нарачката и налогот</text><text x="915" y="196" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#475569">се менуваат автоматски преку</text><text x="915" y="213" font-family="Arial, 'Segoe UI', sans-serif" font-size="11" fill="#475569">деловната логика (lib/flow.ts).</text>
+</svg>
